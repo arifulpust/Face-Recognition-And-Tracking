@@ -211,14 +211,22 @@ public final class FaceActivity extends AppCompatActivity {
 
   private void createCameraSource() {
     Log.d(TAG, "createCameraSource called.");
-
-    Context context = getApplicationContext();
-    FaceDetector detector = createFaceDetector(context);
-
     int facing = CameraSource.CAMERA_FACING_FRONT;
     if (!mIsFrontFacing) {
       facing = CameraSource.CAMERA_FACING_BACK;
     }
+    Context context = getApplicationContext();
+    FaceDetector detector = createFaceDetector(context);
+//    FaceDetector detector = new FaceDetector.Builder(context)
+//            .setLandmarkType(FaceDetector.ALL_LANDMARKS)
+//            .setClassificationType(FaceDetector.ALL_CLASSIFICATIONS)
+//            .setTrackingEnabled(true)
+//            .setMode(FaceDetector.FAST_MODE)
+//            .setProminentFaceOnly(mIsFrontFacing)
+//            .setMinFaceSize(mIsFrontFacing ? 0.35f : 0.15f)
+//            .build();
+
+
 
     // The camera source is initialized to use either the front or rear facing camera.  We use a
     // relatively low resolution for the camera preview, since this is sufficient for this app
@@ -231,8 +239,8 @@ public final class FaceActivity extends AppCompatActivity {
     // want to increase the resolution.
     mCameraSource = new CameraSource.Builder(context, detector)
       .setFacing(facing)
-      .setRequestedPreviewSize(320, 240)
-      .setRequestedFps(60.0f)
+      .setRequestedPreviewSize(640, 480)
+      .setRequestedFps(80.0f)
       .setAutoFocusEnabled(true)
       .build();
   }

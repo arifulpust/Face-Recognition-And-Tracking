@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/view_header"
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <ocuiparts.com.library.customView.CustomHeaderView
+                android:id="@+id/rlt_header"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@color/white"
+                app:dropShadow="true"
+                app:left_icon_visibility="true"
+                app:right_icon_visibility="false"
+                app:left_point_visibility="false"
+                app:text_color="@color/black"
+                app:point_text_color="@color/colorAccentNew"
+                app:title_text="@string/btn_sign_up"
+                app:title_textSize="10px"
+                app:title_visible="true"></ocuiparts.com.library.customView.CustomHeaderView>
+
+
+            <ocuiparts.com.library.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:tag="32"
+                android:text="@string/btn_sign_up"
+                android:textColor="@color/black"
+                android:textSize="32px"
+                android:textStyle="bold"
+                app:background_color="@color/white"
+
+                />
+
+
+                />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scr_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_footer"
+            android:layout_below="@+id/view_header"
+            android:layout_centerVertical="true"
+            android:fadeScrollbars="false"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/lnl_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_register_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_register_code_title"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_register_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:tag="26"
+                            app:hint_et="@string/txt_sign_up_register_code_hint"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+
+
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_register_code"
+                            android:layout_width="40px"
+                            android:layout_height="26px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="36px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_check" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_register_code_fail"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="38px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_fail" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_name"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:paddingRight="105px"
+                            android:tag="26"
+                            app:hint_et="@string/txt_sign_up_name"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_name"
+                            android:layout_width="40px"
+                            android:layout_height="26px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="36px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_check" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_name_fail"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="38px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_fail" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_username"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:paddingRight="105px"
+                            android:tag="26"
+                            app:hint_et="@string/txt_sign_up_username"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_user_name"
+                            android:layout_width="40px"
+                            android:layout_height="26px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="36px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_check" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_user_name_fail"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="38px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_fail" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/email_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="3px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/login_email"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:paddingRight="105px"
+                            android:tag="26"
+                            app:hint_et="@string/login_email"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_email"
+                            android:layout_width="40px"
+                            android:layout_height="26px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="36px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_check" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/view_check_email_fail"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="38px"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_img_fail" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:id="@+id/textView"
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_phone"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+                        />
+
+
+                    <ocuiparts.com.library.customEditText.PasswordEditTextView
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/textView"
+                        android:background="@color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_bold"
+                        android:textSize="26sp"
+                        app:cursor_color="@color/colorAccent"
+                        app:hint_color_pass="@color/gray_black"
+                        app:hint_pass="@string/password_hint"
+                        app:placeholder_color="@color/white"
+                        app:text_color_pass="@color/black"
+                        app:text_size_pass="22" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="3px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_phone"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:paddingRight="105px"
+                            android:tag="26"
+                            app:hint_et="@string/txt_sign_up_phone"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+          <!--      <RelativeLayout
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px"
+                    android:paddingRight="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_phone"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:paddingRight="105px"
+                            android:tag="26"
+                            app:hint_et="@string/txt_sign_up_phone"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+
+                        <View
+                            android:id="@+id/v_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:clickable="true" />
+                    </RelativeLayout>
+                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:paddingLeft="32px"
+                    android:paddingRight="32px">
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_birthday"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+                        />
+
+
+
+                    <ocuiparts.com.library.customEditText.EmailEditTextView
+                        android:id="@+id/edt_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="197px"
+                        android:paddingRight="105px"
+                        android:tag="26"
+                        app:hint_et="@string/txt_sign_up_birthday"
+                        app:cursor_color="@color/colorAccent"
+                        app:hint_color_et="@color/grayTextIntro"
+                        app:lines="1"
+                        app:max_lines="1"
+                        app:placeholder_color="@color/white"
+                        app:text_color_et="@color/black"
+                        app:text_size_et="26px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:paddingLeft="2px"
+                    android:paddingRight="32px">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_building"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px"
+                        app:background_color="@color/white"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="112px"
+                        android:layout_marginTop="4px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32px"
+                        android:paddingRight="32px">
+
+                        <ocuiparts.com.library.View.YuGothicTextView
+                            android:layout_width="197px"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:tag="22"
+                            android:text="@string/txt_sign_up_building"
+                            android:textColor="@color/gray_bold"
+                            android:textSize="22px" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ocuiparts.com.library.View.YuGothicTextView
+                                android:id="@+id/edt_building"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"
+                                android:gravity="center_vertical"
+                                android:hint="@string/txt_sign_up_building"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:paddingLeft="197px"
+                                android:tag="26"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray_bold"
+                                android:textSize="26px" />
+
+                            <Spinner
+                                android:id="@+id/spn_room"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"
+                                android:paddingLeft="197px"></Spinner>
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_marginTop="4px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32px"
+                    android:paddingRight="32px">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="22"
+                        android:text="@string/txt_sign_up_room"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="22px" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ocuiparts.com.library.View.YuGothicTextView
+                            android:id="@+id/edt_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/txt_sign_up_room"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="197px"
+                            android:tag="26"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray_bold"
+                            android:textSize="26px" />
+
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_below="@+id/view_header"
+            android:background="@drawable/gradient_color_top" />
+
+        <LinearLayout
+            android:id="@+id/view_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <ocuiparts.com.library.customButtons.CustomSubmitButton
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="32px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/background_btn"
+                android:foreground="@drawable/ripple_corner"
+                android:stateListAnimator="@null"
+                android:tag="39"
+                android:text="@string/btn_sign_up_next"
+                android:textColor="@color/white"
+                android:textSize="39px"
+                android:textStyle="bold"
+                app:background_color="@color/colorAccentNew"
+                />
+
+
+
+            <ocuiparts.com.library.View.YuGothicTextView
+                android:id="@+id/txt_account_exist"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:layout_marginTop="32px"
+                android:gravity="center"
+                android:maxLines="1"
+                android:tag="25"
+                android:text="@string/txt_sign_up_account_exist"
+                android:textColor="@color/black"
+                android:textSize="25px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black50"
+        android:onClick="doNothing"
+        android:padding="50px"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="60px"
+                android:paddingRight="20px">
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="118px"
+                    android:layout_marginRight="40px"
+                    android:layout_marginTop="55px"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:tag="32"
+                    android:text="@string/txt_sign_up_confirm"
+                    android:textColor="@color/gray_black"
+                    android:textSize="32px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_register_code_title"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_register_code_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingRight="105px"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_name"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_name_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingRight="105px"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:orientation="horizontal">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_username"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_user_name_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingRight="105px"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/login_email"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_email_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:tag="24"
+                        android:text="@string/login_password"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_password_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="197px"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_phone"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_phone_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:orientation="horizontal">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_birthday"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_birthday_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:orientation="horizontal">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_building"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_building_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:orientation="horizontal">
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:layout_width="197px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:tag="24"
+                        android:text="@string/txt_sign_up_room"
+                        android:textColor="@color/gray_bold"
+                        android:textSize="24px" />
+
+                    <ocuiparts.com.library.View.YuGothicTextView
+                        android:id="@+id/txt_room_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="28"
+                        android:textColor="@color/gray_black"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_marginBottom="59px"
+                    android:layout_marginTop="39px"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8px"
+                    android:paddingRight="44px">
+
+                    <ocuiparts.com.library.View.YuGothicButton
+                        android:id="@+id/btn_sign_up_confirm_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_btn_border"
+                        android:foreground="@drawable/ripple_corner"
+                        android:stateListAnimator="@null"
+                        android:tag="32"
+                        android:text="@string/btn_sign_up_cancel"
+                        android:textColor="@color/colorAccentNew"
+                        android:textSize="32px"
+                        android:textStyle="bold" />
+
+                    <ocuiparts.com.library.View.YuGothicButton
+                        android:id="@+id/btn_sign_up_confirm_ok"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12px"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_btn"
+                        android:foreground="@drawable/ripple_corner"
+                        android:stateListAnimator="@null"
+                        android:tag="32"
+                        android:text="@string/ok"
+                        android:textColor="@color/white"
+                        android:textSize="32px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black50"
+        android:onClick="doNothing"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_close_finish"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/content_description_close"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:stateListAnimator="@null"
+                android:visibility="gone"
+                app:srcCompat="@drawable/btn_close_svg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="92px"
+                android:orientation="vertical">
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingMultiplier="1.2"
+                    android:tag="32"
+                    android:text="@string/txt_sign_up_finish"
+                    android:textColor="@color/gray_black"
+                    android:textSize="32px"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="66px"
+                    android:layout_marginTop="47px">
+
+
+                    <ocuiparts.com.library.customButtons.CustomSubmitButton
+                        android:id="@+id/btn_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="32px"
+                        android:layout_marginTop="32px"
+                        android:background="@drawable/background_btn"
+                        android:foreground="@drawable/ripple_corner"
+                        android:stateListAnimator="@null"
+                        android:tag="39"
+                        android:text="@string/btn_sign_up"
+                        android:textColor="@color/white"
+                        android:textSize="39px"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_click_abandon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black25"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></ProgressBar>
+    </RelativeLayout>
+
+</RelativeLayout>

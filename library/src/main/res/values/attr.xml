@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParentViewFeatures">
+        <attr name="border_color" format="reference|color" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="background_color" format="color|reference" />
+        <attr name="title_visible" format="boolean" />
+        <attr name="title_text" format="string" />
+        <attr name="title_textSize" format="dimension" />
+        <attr name="text_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="EmailEditTextView" parent="ParentViewFeatures">
+        <attr name="hint_et" format="string" />
+        <attr name="cursor_color" format="reference|color" />
+        <attr name="placeholder_color" format="reference|color" />
+        <attr name="hint_color_et" format="reference|color" />
+        <attr name="text_color_et" format="reference|color" />
+        <attr name="text_size_et" format="dimension" />
+        <attr name="lines" format="integer" />
+        <attr name="max_lines" format="integer" />
+        <attr name="border_color" />
+        <attr name="corner_radius" />
+        <attr name="border_width" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CustomHeaderView" parent="ParentViewFeatures">
+        <attr name="left_icon_visibility" format="boolean" />
+        <attr name="right_icon_visibility" format="boolean" />
+        <attr name="left_point_visibility" format="boolean" />
+        <attr name="left_point" format="integer" />
+        <attr name="left_icon" format="integer" />
+        <attr name="right_icon" format="integer" />
+        <attr name="dropShadow" format="boolean" />
+        <attr name="title_visible" />
+        <attr name="title_text" />
+        <attr name="point_text" />
+        <attr name="title_textSize" />
+        <attr name="point_textSize" />
+        <attr name="point_text_color" format="reference|color" />
+        <attr name="text_color"  />
+        <attr name="point_text_header" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCellView" parent="ParentViewFeatures">
+        <attr name="upper_left_text_visibility" format="boolean" />
+        <attr name="bottom_left_text_visibility" format="boolean" />
+        <attr name="upper_right_text_visibility" format="boolean" />
+        <attr name="upper_left_text" />
+        <attr name="upper_right_text" />
+        <attr name="bottom_left_text" />
+        <attr name="upper_left_text_size" />
+        <attr name="upper_right_text_size" />
+        <attr name="bottom_left_text_size"  />
+        <attr name="upper_left_text_color"/>
+        <attr name="upper_right_text_color"/>
+        <attr name="bottom_left_text_color"/>
+        <attr name="banner_text_color"/>
+        <attr name="banner_text"/>
+        <attr name="left_icon_cell" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView" parent="ParentViewFeatures">
+        <attr name="image_main" format="integer" />
+        <attr name="title_visible" />
+        <attr name="title_text" />
+        <attr name="title_textSize" />
+        <attr name="text_color" />
+        <attr name="border_color" />
+        <attr name="corner_radius" />
+        <attr name="border_width" />
+        <attr name="background_color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView" parent="ParentViewFeatures">
+        <attr name="border_color" />
+        <attr name="corner_radius" />
+        <attr name="border_width" />
+        <attr name="background_color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTabBarView" parent="ParentViewFeatures">
+        <attr name="border_color" />
+        <attr name="corner_radius" />
+        <attr name="border_width" />
+        <attr name="background_color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PasswordEditTextView" parent="ParentViewFeatures">
+        <attr name="cursor_color_pass" format="string" />
+        <attr name="placeholder_color_pass" format="integer" />
+        <attr name="border_color_pass" format="integer" />
+
+        <attr name="hint_pass" format="string" />
+        <attr name="hint_color_pass" format="integer" />
+        <attr name="text_color_pass" format="integer" />
+        <attr name="text_size_pass" format="integer" />
+        <attr name="corner_radius_border_pass" format="integer" />
+        <attr name="border_color" />
+        <attr name="corner_radius" />
+        <attr name="border_width" />
+        <attr name="background_color" />
+
+        <attr name="password_visibility_icon_on" format="integer" />
+        <attr name="password_visibility_icon_off" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="strokeWidthPro" format="dimension" />
+        <attr name="strokeColorPro" format="color|reference" />
+        <attr name="fillColorPro" format="color|reference" />
+        <attr name="circleGapPro" format="integer" />
+        <attr name="isShowThree" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSubmitButton" parent="ParentViewFeatures">
+        <attr name="border_color" />
+        <attr name="corner_radius" />
+        <attr name="border_width" />
+        <attr name="background_color" />
+        <attr name="background_drawable" format="integer" />
+        <attr name="forground_drawable" format="integer" />
+    </declare-styleable>
+
+</resources>

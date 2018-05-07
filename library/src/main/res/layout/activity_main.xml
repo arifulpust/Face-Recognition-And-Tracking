@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ocuiparts.com.library.Activities.MainActivity">
+
+    <ocuiparts.com.library.customView.CustomHeaderView
+        android:id="@+id/rlt_header"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/white"
+        app:dropShadow="true"
+        app:left_icon_visibility="false"
+        app:left_point_visibility="true"
+        app:right_icon_visibility="true"
+        app:text_color="@color/black"
+        app:point_text="100"
+        app:point_text_color="@color/colorAccentNew"
+        app:title_text=""
+        app:title_textSize="32px"
+        app:title_visible="true"></ocuiparts.com.library.customView.CustomHeaderView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_header"
+        android:layout_marginBottom="120px">
+    </android.support.v7.widget.RecyclerView>
+
+    <ocuiparts.com.library.customView.OCUITabBar
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ocuiparts.com.library.customView.OCUITabBar>
+
+</RelativeLayout>

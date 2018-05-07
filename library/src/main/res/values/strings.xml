@@ -1,0 +1,473 @@
+<resources>
+    <string name="app_name">OCUIParts</string>
+    <string name="tutorial_txt_start">はじめる</string>
+    <string name="main_txt_point">pt</string>
+    <string name="timeline_view_detail">詳細を見る</string>
+    <string name="earned_all">すべて</string>
+    <string name="earned_incomplete">未完了</string>
+    <string name="earned_pending">判定待ち</string>
+    <string name="earned_no_all">ポイント獲得はありません</string>
+    <string name="earned_no_incomplete">交換済みアイテムはありません</string>
+    <string name="earned_no_pending">判定待ちのワークはありません</string>
+    <string name="title_timeline">ホーム</string>
+    <string name="title_chat">メッセージ一覧</string>
+    <string name="title_alert">お知らせ</string>
+    <string name="title_my_page">マイページ</string>
+    <string name="title_setting">設定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="info">商品情報</string>
+    <string name="mr">さん</string>
+    <string name="yen">円</string>
+    <string name="all">すべて</string>
+
+    <string name="point_get">ポイント獲得</string>
+    <string name="point_exchange">ポイント交換</string>
+    <string name="btn_point_get_news">ポイントGET</string>
+    <string name="point_get_no_link">Access Link Error</string>
+    <string name="point_get_coming_soon">Coming soon...</string>
+
+    <string name="timeline_exchange">ポイント交換</string>
+    <string name="timeline_get_point">ポイント獲得</string>
+    <string name="timeline_more">もっと見る</string>
+    <string name="timeline_close">閉じる</string>
+
+    <string name="main_center_job">就活相談・その他</string>
+    <string name="main_center_house">お家のこと</string>
+    <string name="main_center_title">チャットで相談しよう！</string>
+
+    <string name="exchange_all">すべて</string>
+    <string name="exchange_list">リスト</string>
+    <string name="exchange_replaced">交換済み</string>
+    <string name="alert_search_hint">検索ワードを入力してください</string>
+    <string name="exchange_search_hint">@string/earn_search_hint</string>
+    <string name="earn_search_hint">検索ワードを入力してください</string>
+    <string name="earn_utils">まで</string>
+    <string name="price">獲得\n予定</string>
+    <string name="btn_answer">回答する</string>
+    <string name="btn_capture">撮影する</string>
+    <string name="btn_exchange">交換する</string>
+    <string name="btn_exchange_get_point">ポイント獲得へ</string>
+    <string name="txt_stock_exists">在庫あり</string>
+    <string name="txt_exchange_remain">お一人様あたり交換可能回数：あと%1$s回</string>
+    <string name="txt_stock_over">ただいま在庫切れです</string>
+    <string name="txt_exchange_over">交換可能回数を超えています</string>
+
+    <string name="exchange_no_all">交換アイテムはありません</string>
+    <string name="exchange_no_list">お気に入りはまだありません</string>
+    <string name="exchange_no_replace">交換済みアイテムはありません</string>
+    <string name="txt_exchange_popup_title">ポイントが足りません</string>
+    <string name="txt_exchange_popup_content">このアイテムをお気に入りに追加して\nポイントを貯めましょう！</string>
+    <string name="txt_exchange_no_favourite">お気に入りに追加</string>
+    <string name="txt_exchange_favourite">追加しました</string>
+    <string name="txt_exchange_title">アイテムを交換します</string>
+    <string name="txt_exchange_my_point">所持ポイント</string>
+    <string name="txt_exchange_item_point">使用ポイント</string>
+    <string name="txt_exchange_after_point">残高ポイント</string>
+    <string name="txt_exchange_code">交換コード</string>
+    <string name="txt_history_header_giftee">交換コードのURLからサイトへ進んでください。</string>
+    <string name="txt_history_header_not_giftee">対象サイトにて商品コードを入力してください。</string>
+    <string name="txt_history_header_exchange_date">交換日:</string>
+    <string name="txt_history_header_shipment_date">"発送日:</string>
+    <string name="txt_history_header_expired_date">有効期限:</string>
+
+    <string name="job_introduction_favorite">お気に入り</string>
+    <string name="job_introduction_apply">応募済み</string>
+    <string name="job_introduction_time">まで</string>
+    <string name="job_no_content_favorite">お気に入りはまだありません</string>
+    <string name="job_no_content_applied">応募済みはまだありません</string>
+    <string name="job_intro_filter_area">地域</string>
+    <string name="job_intro_filter_category">職種</string>
+    <string name="job_detail_wanted_information">募集情報</string>
+    <string name="job_detail_salary">給与</string>
+    <string name="job_detail_working_hours">勤務時間</string>
+    <string name="job_detail_work_location">勤務地</string>
+    <string name="job_detail_nearest_location">最寄駅</string>
+    <string name="job_detail_applicaion_condition">応募条件</string>
+    <string name="job_detail_holiday_vacation">休日・休暇</string>
+    <string name="job_detail_treatments_benefits">待遇・福利厚生</string>
+    <string name="job_detail_company_profile">会社概要</string>
+    <string name="job_detail_company_name">企業名</string>
+    <string name="job_detail_capital">資本金</string>
+    <string name="job_detail_number_of_employees">従業員数</string>
+    <string name="job_detail_established_date">設立年月</string>
+    <string name="job_detail_location">所在地</string>
+    <string name="job_detail_business_contents">事業内容</string>
+    <string name="job_detail_url">URL</string>
+    <string name="job_detail_apply_job">応募する</string>
+    <string name="job_detail_job_applied">応募済み</string>
+    <string name="title_job_consultation">就活相談・その他</string>
+    <string name="title_job_detail">イベント</string>
+    <string name="title_byte_detail">バイト詳細</string>
+
+
+    <string name="residents_note_all_note">すべて</string>
+    <string name="residents_note_favorite_note">お気に入り</string>
+    <string name="residents_note_my_note">自分の投稿</string>
+    <string name="text_hint">検索ワードを入力してください</string>
+    <string name="comment_text_hint">コメントを書く</string>
+    <string name="note_created_time_year_month_day">%1$s.%2$s.%3$s</string>
+    <string name="note_created_time_year_month_day_2">%1$s/%2$s/%3$s</string>
+    <string name="distance_time_year_month_day">%1$s年%2$s月%3$s日</string>
+    <string name="distance_time_month_day">%1$s月%2$s日</string>
+    <string name="distance_time_week_ago">1週間前</string>
+    <string name="distance_time_day_ago">%1$s日前</string>
+    <string name="distance_time_yesterday">昨日</string>
+    <string name="distance_time_hour_ago">%1$s時間前</string>
+    <string name="distance_time_minute_ago">%1$s分前</string>
+    <string name="distance_time_second_ago">%1$s秒前</string>
+    <string name="header_list_note">ノート</string>
+    <string name="header_list_comment">コメント</string>
+
+    <string name="create_comment_title">コメント作成</string>
+    <string name="send_comment">コメントする</string>
+
+    <string name="jobs_part_time">アルバイト</string>
+    <string name="jobs_intern">インターン</string>
+
+    <string name="setting_term_of_service">利用規約</string>
+    <string name="setting_privacy_policy">プライバシーポリシー</string>
+    <string name="setting_faq">よくある質問</string>
+    <string name="setting_logout">ログアウト</string>
+    <string name="setting_logout_popup_message">ログアウトします。\nよろしいですか？</string>
+    <string name="setting_logout_popup_done">ログアウトしました</string>
+
+    <string name="job_consultation_hint">メッセージを入力してください</string>
+    <string name="job_consultation_intro">お仕事のご相談にお答えします。\nお気軽に話しかけてください！</string>
+    <string name="job_consultation_header_intro">自己紹介</string>
+    <string name="job_consultation_send_message">メッセージを送る</string>
+    <string name="job_updated_time">更新日:%1$s</string>
+
+    <string name="login_email">メールアドレス</string>
+    <string name="login_password">パスワード</string>
+    <string name="hint_password">半角英数字8~20文字</string>
+    <string name="update_old_password">現在のパスワード</string>
+    <string name="update_new_password">新しいパスワード</string>
+    <string name="login_forgot_password_intro">パスワードを忘れた方はこちら</string>
+    <string name="btn_login">ログイン</string>
+    <string name="login_sign_up_intro">まだアカウントをお持ちでない方</string>
+    <string name="btn_sign_up">新規登録</string>
+    <string name="btn_sign_up_next">確認する</string>
+    <string name="txt_login_term_service">登録することで、利用規約に同意したことになります</string>
+    <string name="txt_login_select_building_title">建物名選択</string>
+    <string name="txt_sign_up_account_exist">すでにアカウントをお持ちの方はこちら</string>
+    <string name="txt_sign_up_register_code_title">入居者専用パス</string>
+    <string name="txt_sign_up_register_code_hint">賃貸契約時発行パスワード</string>
+    <string name="txt_sign_up_name">氏名</string>
+    <string name="txt_sign_up_username">ユーザー名</string>
+    <string name="txt_sign_up_phone">電話番号</string>
+    <string name="txt_sign_up_birthday">生年月日</string>
+    <string name="txt_sign_up_building">建物名</string>
+    <string name="txt_sign_up_room">部屋番号</string>
+    <string name="txt_sign_up_confirm">以下の内容で登録します</string>
+    <string name="btn_sign_up_cancel">キャンセル</string>
+    <string name="txt_sign_up_finish">ご登録のメールアドレスに\n認証メールをお送りしました。\nメールボックスをご確認いただき、\n登録を完了させてください。</string>
+    <string name="txt_sign_up_select_building_search_hint">建物名を入力してください</string>
+
+    <string name="txt_skill_back">戻る</string>
+    <string name="txt_skill_skip">次へ</string>
+    <string name="txt_skill_step_1">1</string>
+    <string name="txt_skill_step_2">2</string>
+    <string name="txt_skill_question">\u003F</string>
+    <string name="txt_skill_a_detail">マネジメントや教育に携わっているレベル</string>
+    <string name="txt_skill_b_detail">独力で業務を完遂できるレベル</string>
+    <string name="txt_skill_c_detail">サポートが必要なレベル</string>
+    <string name="txt_skill_intro">まずはMYスキルを入力して\nバイトやお仕事を探そう！</string>
+    <string name="txt_skill_intro_new">スキルチェックを入力すると最適なお仕事の紹介が受けられます。</string>
+    <string name="txt_skill_intro_new_1">※不要な方はスキップしてください</string>
+    <string name="txt_skill_skill">スキルレベル</string>
+    <string name="txt_skill_intro_done">チェックありがとうございます。\nさっそくはじめましょう！</string>
+    <string name="txt_skill_intro_1_new">経験された業務にいずれかを選択して下さい</string>
+    <string name="txt_skill_intro_2">経験したことのある業務環境や\nツール、作業を選択して下さい</string>
+    <string name="txt_skill_header_company">一般事務</string>
+    <string name="txt_skill_header_center">コールセンター</string>
+    <string name="txt_skill_header_os">OS</string>
+    <string name="txt_skill_header_word">Word</string>
+    <string name="txt_skill_header_powerpoint">PowerPoint</string>
+    <string name="txt_skill_header_excel">Excel</string>
+    <string name="txt_skill_header_1">電話応対</string>
+    <string name="txt_skill_header_2">来客対応</string>
+    <string name="txt_skill_header_3">書類作成</string>
+    <string name="txt_skill_header_4">ファイリング</string>
+    <string name="txt_skill_header_5">備品管理</string>
+    <string name="txt_skill_header_6">アウトバウンド</string>
+    <string name="txt_skill_header_7">来客対応</string>
+    <string name="txt_skill_header_8">マネージャー・ＳＶ</string>
+    <string name="txt_skill_header_9">サービス系コールセンター</string>
+    <string name="txt_skill_header_10">テクニカル系コールセンター</string>
+    <string name="txt_skill_inexperience">未経験</string>
+    <string name="txt_skill_1_3_years">1〜3年</string>
+    <string name="txt_skill_over_3_years">3年以上</string>
+    <string name="btn_next">次へ</string>
+    <string name="btn_done">完了</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_edit">編集</string>
+    <string name="btn_skill_skip">スキップ</string>
+    <string name="btn_skill_ok">進む</string>
+
+
+    <string name="ok">OK</string>
+    <string name="ok_done">はじめる</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_cancel">キャンセル</string>
+    <string name="err_title">エラー</string>
+    <string name="err_message">エラーが発生しました。もう一度試してください。</string>
+    <string name="err_no_network">ネットワークに接続していません</string>
+
+    <string name="err_update_password_fail">現在のパスワードと新しいパスワードを正しく入力してください。</string>
+    <string name="err_no_email">メールアドレスを入力してください</string>
+    <string name="err_email_format">メールアドレスを正しく入力してください</string>
+    <string name="err_no_password">パスワードを入力してください</string>
+    <string name="err_no_building">建物名を選択してください</string>
+    <string name="err_no_room">部屋番号を選択してください</string>
+    <string name="err_email_not_match">メールアドレスが一致していません。</string>
+    <string name="err_email_password_wrong">メールアドレス又はパスワードが正しくありません。再度入力してください</string>
+    <string name="err_email_duplicate">このメールアドレスが既に登録されています</string>
+    <string name="err_no_register_code">入居者専用パスを入力してください。</string>
+    <string name="err_register_code_invalid">入居者専用パスが違います。</string>
+    <string name="err_no_name">氏名を入力してください</string>
+    <string name="err_name_duplicate">この氏名が既に登録されています</string>
+    <string name="err_name_invalid">氏名は50文字以内で入力してください</string>
+    <string name="err_name_kana_is_not_kana">カタカナで入力してください</string>
+    <string name="err_name_kana_invalid_length">フリガナは50文字以内で入力してください</string>
+    <string name="err_no_phone">電話番号を入力してください</string>
+    <string name="err_no_username">ユーザー名を入力してください</string>
+    <string name="err_username_duplicate">このユーザー名が既に登録されています</string>
+    <string name="err_username_invalid">ユーザー名は50文字以内で入力してください</string>
+    <string name="err_password_has_special_character">パースワードは半角英数字で入力してください</string>
+    <string name="err_password_invalid_length">パスワードは8~20文字で入力してください。</string>
+    <string name="err_empty_code">メールに記載されたコードを入力してください。</string>
+    <string name="err_send_image_out_limit">写真の容量が大きすぎてアップロードができません</string>
+    <string name="err_email_not_exists">一致するメールアドレスがありません</string>
+    <string name="err_user_has_been_activated">このミカタIDが既に登録されています</string>
+    <string name="err_id_password_wrong">ミカタのメールアドレス又はパスワードが正しくありません。再度入力してください</string>
+    <string name="err_email_duplicate_mikata">すでに登録されているメールアドレスです</string>
+
+    <string name="txt_header_password">パスワード再発行</string>
+    <string name="txt_password_intro_1">ご登録のメールアドレスに\nパスワード再発行のリンクをお送りします。</string>
+    <string name="txt_password_intro_2">に認証コードを送りしました。\n下記に入力し、次へを押してください。</string>
+    <string name="txt_password_intro_3">新しいパスワードを入力してください</string>
+    <string name="txt_password_bottom">メールが届かない場合はこちら\nからお問合せください</string>
+    <string name="txt_password_email">メールアドレス</string>
+    <string name="txt_password_email_confirm">確認のため\nもう一度入力</string>
+    <string name="txt_password_email_confirm_1_line">確認のためもう一度入力</string>
+    <string name="txt_password_code">認証コード</string>
+    <string name="btn_password_next">送信</string>
+    <string name="password_hint">半角英数字8~20文字</string>
+
+
+
+
+    <string name="btn_point_get">ポイント\n獲得</string>
+    <string name="btn_point_exchange">ポイント\n交換</string>
+    <string name="btn_byte">バイト</string>
+    <string name="btn_job_introduction">お仕事\n紹介</string>
+    <string name="btn_resident_note">住人ノート</string>
+    <string name="btn_my_skill">MYスキル</string>
+    <string name="txt_remote">リモコン</string>
+
+
+    <string name="txt_change_icon">アイコン変更</string>
+    <string name="txt_passbook_title">ポイント通帳</string>
+    <string name="txt_current">現在</string>
+    <string name="btn_exchange_point">ポイントを交換する</string>
+    <string name="txt_date">日付</string>
+    <string name="txt_content">内容</string>
+    <string name="txt_payment">収支</string>
+    <string name="txt_balance">残高</string>
+    <string name="day">日</string>
+
+    <string name="txt_news">ニュース</string>
+    <string name="txt_access_link">サイトアクセス</string>
+    <string name="txt_answer_survey">アンケート</string>
+    <string name="txt_capture_photo">写真撮り</string>
+    <string name="txt_register_from_other_site">サイト登録</string>
+    <string name="txt_point_item">point_item</string>
+    <string name="txt_point_return">point_return</string>
+    <string name="txt_after_service">after_service</string>
+    <string name="txt_point_expired">point_expired</string>
+
+    <string name="txt_header_mypage">プロフィール</string>
+    <string name="txt_header_myskill">MYスキル</string>
+    <string name="txt_mypage_icon_intro">変更したいアイコンを\n選択してください</string>
+
+    <string name="btn_unread">未読</string>
+    <string name="btn_read">既読</string>
+    <string name="txt_no_read">既読のお知らせはありません</string>
+    <string name="txt_no_unread">未読のお知らせはありません</string>
+    <string name="txt_no_all">お知らせはありません</string>
+    <string name="txt_header_alert_detail">お知らせ詳細</string>
+    <string name="txt_check_read">チェックする</string>
+
+    <string name="txt_title_complete">手続き完了</string>
+    <string name="txt_content_complete">ポイント交換手続きが完了しました。\n確認メールをお送りしております。\n「交換済み」からもご確認できます。</string>
+    <string name="btn_exchange_complete_to_top">ポイント交換TOPへ</string>
+    <string name="btn_fire_in_the_hole">決定</string>
+
+    <string name="time_second_ago">A few seconds ago</string>
+    <string name="time_minute_ago">minutes ago</string>
+    <string name="time_hour_ago">hours ago</string>
+    <string name="time_day_ago">days ago</string>
+
+    <string name="txt_rating">評価・口コミ</string>
+    <string name="txt_recruitment">募集PR</string>
+
+    <string name="content_description_header_setting">Setting</string>
+    <string name="content_description_footer_home">Home</string>
+    <string name="content_description_footer_chat">Chat</string>
+    <string name="content_description_footer_center_chat">Chat Menu</string>
+    <string name="content_description_footer_alert">Alert</string>
+    <string name="content_description_footer_my_page">My Page</string>
+    <string name="content_description_back">Back</string>
+    <string name="content_description_sort">Sort</string>
+    <string name="content_description_emoticon">Emoticon</string>
+    <string name="content_description_attach_image">Attach Image</string>
+    <string name="content_description_close">Close</string>
+    <string name="content_description_show_password">Show Password</string>
+    <string name="content_description_hide_password">Hide Password</string>
+    <string name="content_description_edit_information">Edit Information</string>
+    <string name="content_description_previous">Previous</string>
+    <string name="content_description_next">Next</string>
+
+    <string name="txt_note_post_delete_confirm">削除します。\nよろしいですか？</string>
+    <string name="txt_note_post_delete_successful">削除しました</string>
+    <string name="txt_note_post_go_to_my_post">自分の投稿へ</string>
+    <string name="txt_note_post_cancel_new_post">変更内容を破棄します。\nよろしいですか？</string>
+    <string name="txt_note_post_add_new_post_successful">作成しました</string>
+    <string name="txt_note_post_go_to_list_note">ノート一覧へ</string>
+    <string name="txt_title_resident_note">住人ノート</string>
+    <string name="txt_note_go_to_comment">コメントする</string>
+
+    <string name="txt_note_genre_1">ファッション</string>
+    <string name="txt_note_genre_2">ダイエット</string>
+    <string name="txt_note_genre_3">美容</string>
+    <string name="txt_note_genre_4">音楽・映画</string>
+    <string name="txt_note_genre_5">トラベル</string>
+    <string name="txt_note_genre_6">グルメ</string>
+    <string name="txt_note_genre_7">イベント</string>
+    <string name="txt_note_genre_8">キャリア</string>
+
+    <string name="txt_comment_create_confirm">変更内容を破棄します。\nよろしいですか？</string>
+    <string name="txt_add_note_header">新規ノート作成</string>
+    <string name="txt_add_note_title_hint">タイトル</string>
+    <string name="txt_add_note_range_title">公開範囲</string>
+    <string name="txt_add_note_range_all">全体</string>
+    <string name="txt_add_note_range_building_limit">建物限定</string>
+    <string name="btn_add_note_create_note">作成する</string>
+    <string name="message_validate_note_title">タイトルを入力してください</string>
+    <string name="message_validate_note_genre">ジャンルを選択してください</string>
+    <string name="txt_add_note_cancel_confirm">変更内容を破棄します。\nよろしいですか？</string>
+    <string name="txt_add_comment_no_content_error">コメントを入力してください</string>
+    <string name="txt_send_comment_success">コメントしました</string>
+    <!-- HOUSE -->
+    <string name="txt_house_chat_title">お家相談</string>
+    <string name="txt_house_chat_navigator">お家ナビゲーター</string>
+    <string name="txt_house_chat_description">お家のことで困ったことなどご相談にお答えします。\nお気軽に話しかけてください！</string>
+    <string name="number_picker_year_formatter">%04d</string>
+    <string name="number_picker_month_day_formatter">%02d</string>
+
+    <!--Job apply-->
+    <string name="txt_job_intro_apply">応募フォーム</string>
+    <string name="btn_job_intro_confirm_apply">確認画面へ</string>
+    <string name="txt_job_intro_apply_tutorial">1）応募フォームご入力後、確認のメールが届きます。\n2）担当者より、メールまたは電話にてご連絡いたします。\n3）お仕事のご紹介・物件紹介をご希望の場合、ご相談日時を決めて、電話またはSkype等で詳細をお伺いします。\n※その後のフローは、お客様の状況によって変わりますので、ご相談時にご案内いたします。\n※電話相談は必須ではございません。メールのみのやりとりも承っております。</string>
+    <string name="txt_job_intro_input_apply_title_list_job">検討リスト</string>
+    <string name="txt_job_intro_confirm_apply_title_list_job">応募内容</string>
+    <string name="txt_job_intro_apply_title_profile_info">必要事項</string>
+    <string name="btn_job_intro_apply_delete_job">削除</string>
+    <string name="txt_job_intro_apply_question_content">ご質問など\n（任意）</string>
+    <string name="txt_job_intro_confirm_apply_question_content">ご質問など（任意）</string>
+    <string name="txt_job_intro_apply_name_kana">フリガナ\n（任意）</string>
+    <string name="txt_job_intro_confirm_apply_name_kana">フリガナ（任意）</string>
+    <string name="txt_delete_job_intro_apply">検索リストから削除しますが、よろしいでしょうか。</string>
+    <string name="txt_job_intro_confirm_apply_title">こちらで送信します。\nよろしいですか？</string>
+    <string name="txt_send">送信</string>
+
+    <string name="txt_job_apply_done_title">応募が完了しました</string>
+    <string name="txt_job_apply_done_content">ご応募ありがとうございます。\n\nご入力していただいたメールアドレスに確認メールをお送りしております。また、メールが届いていない場合はお問い合わせください。\n\n▼お問合せ先\nTEL:03-5159-1193\nMail:wh.tokyo@smt-days.co.jp</string>
+    <string name="txt_job_apply_done_button_go_top">お仕事紹介TOPへ</string>
+    <string name="txt_byte_apply_done_button_go_top">バイトTOPへ</string>
+
+    <!--Point get status-->
+    <string name="txt_point_get_status_waiting_approve_title">please wait…</string>
+    <string name="txt_point_get_status_waiting_complete_title">Clear!</string>
+    <string name="txt_point_get_status_complete_title">Complete!</string>
+    <string name="txt_point_get_status_waiting_approve_content">判定中です…</string>
+    <string name="txt_point_get_status_waiting_complete_content">ポイントを獲得</string>
+    <string name="txt_point_get_status_complete_content">完了しました！</string>
+
+    <string name="txt_popup_apply_mission_done_title">Good job!</string>
+    <string name="txt_popup_apply_mission_done_content">完了しました！</string>
+    <string name="txt_popup_apply_mission_done_description">ポイント反映まで\nしばらくお待ちください</string>
+    <string name="txt_popup_apply_mission_done_go_top">ポイント獲得へ</string>
+
+    <string name="txt_popup_get_point_successful_title">Congratulations!</string>
+    <string name="txt_popup_get_point_successful_content">ポイントを獲得しました！</string>
+    <string name="txt_popup_get_point_successful_go_top">ポイント獲得へ</string>
+
+    <string name="err_do_not_active_register_mail">メールアドレスの確認が完了していません。\n登録確認メールから登録を完了してください。
+    </string>
+    <string name="message_update_profile_successful">プロフィールを変更しました</string>
+    <string name="txt_apply_mission_image_confirm_title">選択した写真を投稿します。\nよろしいですか？</string>
+    <string name="btn_go_to_chat">メッセージを送る</string>
+    <string name="btn_chat_send_message">送信</string>
+    <string name="txt_chat_category_job_consult">仕事</string>
+    <string name="txt_chat_category_living">家</string>
+    <string name="txt_chat_you_sent_an_image_to_partner">写真を送りました。</string>
+    <string name="txt_chat_partner_sent_an_image_to_me">写真を受信しました</string>
+    <string name="txt_chat_you_sent_a_file_to_partner">ファイルを送りました。</string>
+    <string name="txt_chat_partner_sent_a_file_to_me">ファイルを受信しました</string>
+    <string name="txt_chat_job_tutorial_message">あなたに合った最適なお仕事を、専任のキャリアアドバイザーと決めていけるから安心です♪\n
+        転職・就職にお悩みの方、お気軽にご相談ください。\n(営業時間9：00−18：00)</string>
+    <string name="txt_chat_house_tutorial_message">設備の故障など万が一のトラブルも安心。\n
+        ご質問やご要望の内容に合わせて専門スタッフが丁寧にご対応致します。\nお気軽にお問い合わせください。\n(営業時間9：00−18：00)
+        \n\nよくある質問　もご参考下さい！</string>
+    <string name="txt_chat_building_tutorial_message">コメントはありません。貴方がコメントを送ってみよう！</string>
+    <string name="new_unread_message">NEW</string>
+
+    <string name="skill_check_header">スキルチェック</string>
+    <string name="email_address">club-smart@smt-days.co.jp</string>
+    <string name="email_subject">【問い合わせ】パスワード再発行</string>
+    <string name="email_content">お問い合わせありがとうございます。\nお手数ですが以下の項目を記載の上送信下さい。\n\n折り返し担当者よりご連絡差し上げます\n\n物件名：\n\n部屋番号：\n\n名前：\n\n電話番号：\n\n問い合わせ内容：\n\n</string>
+    <string name="admin_chat_name">かぼちゃの馬車</string>
+
+    <string name="scheme">smdmikata</string>
+    <string name="host">mikata.com</string>
+    <string name="reply">Reply</string>
+    <string name="more_message">more messages</string>
+    <string name="txt_head_job_info">イベント情報</string>
+    <string name="txt_head_job_detail"> 詳細（日時・場所）</string>
+    <string name="read">既読</string>
+    <string name="unread">未読</string>
+
+    <string name="btn_sign_in_mikata">いえらぶIDで新規登録</string>
+    <string name="txt_sign_up">新規登録</string>
+    <string name="btn_sign_in">いえらぶIDで新規登録</string>
+    <string name="txt_login_mikata_intro">地方のミカタで登録している\nメールとパスワードを入力下さい</string>
+    <string name="btn_login_mikata_id">地方のミカタIDで登録</string>
+    <string name="txt_has_mikata_account">すでにアカウントをお持ちの方はこちら</string>
+
+    <string name="txt_info">以下の内容で登録します。</string>
+    <string name="txt_register_name">契約者名</string>
+    <string name="txt_addr_name">建物の所在地・名称</string>
+    <string name="txt_contract_time">契約期間</string>
+    <string name="txt_auto_update">自動更新の有無</string>
+    <string name="txt_contract_start">契約開始日</string>
+    <string name="txt_contract_end">契約満了日</string>
+    <string name="txt_monthly_payment">毎月のお支払い金額</string>
+    <string name="txt_monthly_rent">賃料</string>
+    <string name="txt_monthly_common">共益費</string>
+    <string name="txt_monthly_commission">手数料</string>
+    <string name="btn_back">戻る</string>
+    <string name="room_number">号室</string>
+    <string name="null_value">-</string>
+
+    <string name="sunday">日</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+
+    <string name="tv_point">200</string>
+</resources>

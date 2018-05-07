@@ -9,6 +9,13 @@
     <string name="low_storage_error">This app can’t download the face detector components it needs because this device has too little available storage.</string>
 
 
-
+    <string name="title_activity_main">Ocr Detector Sample</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
 
 </resources>

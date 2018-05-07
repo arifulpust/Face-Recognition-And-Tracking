@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="unpressed_color">#fff44336</color>
+    <color name="pressed_color">#ffd32f2f</color>
+    <color name="ripple_color">#ffeeeeee</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="common_white_1">#ffffff</color>
+    <color name="common_white_2">#feffff</color>
+    <color name="common_white_30">#4dffffff</color>
+    <color name="common_white_10">#1aFFFFFF</color>
+    <color name="common_gray">#c9c9ca</color>
+    <color name="common_gray_txt">#514e4e</color>
+    <color name="common_gray_bg">#9fa0a0</color>
+    <color name="common_black_10">#1a000000</color>
+    <color name="common_black_30_1">#4d000000</color>
+    <color name="common_black_30_2">#4d010000</color>
+    <color name="common_black_50">#80000000</color>
+    <color name="common_black_70">#B3000000</color>
+    <color name="common_black_15">#26000000</color>
+    <color name="common_red">#ed2024</color>
+    <color name="common_yellow">#fff51e</color>
+    <color name="common_light_gray_txt">#b9b9ba</color>
+    <color name="indicator_gray">#737172</color>
+    <color name="common_red_txt">#ff4141</color>
+    <color name="common_blue_bg">#0055bd</color>
+    <color name="fragment_bg">#efefef</color>
+    <color name="main_gray_color">#9d9e9e</color>
+    <color name="hint_color">#ababac</color>
+    <color name="troubleshooting_txt_color">#231815</color>
+
+
+
+    <color name="colorAccentNew">#FC6B2A</color>
+    <color name="black50">#80000000</color>
+    <color name="black25">#40000000</color>
+    <color name="black">#000000</color>
+    <color name="gradient_strong">#80AAAAAA</color>
+    <color name="gradient_weak">#00555555</color>
+    <color name="lightText">#bda69f</color>
+
+    <color name="windowSplash">#faa8b4</color>
+    <color name="windowTutorial">#faa8b4</color>
+    <color name="windowMain">#6c5138</color>
+    <color name="windowMainSelected">#bfbfbf</color>
+    <color name="windowMainSelected50">#7f7f7f</color>
+    <color name="windowMainSelected50API">#281e15</color>
+    <color name="windowMainAPI">#513c25</color>
+    <color name="windowSetting">#f4e6dc</color>
+    <color name="footerBackground">#e4d4cd</color>
+    <color name="headerPointText">#FC6B2A</color>
+    <color name="headerPointTextPt">#FC6B2A</color>
+    <color name="headerSelectBirthday">#e4d4cd</color>
+    <color name="homeCategorySelected">#fc6b2a</color>
+    <color name="homeBackground">#F2F2F2</color>
+    <color name="homeTimelineChocolate">#b89f98</color>
+    <color name="homeContent">#6c5032</color>
+    <color name="footerChatBadge">#FC6B2A</color>
+    <color name="exchangeSearchHint">#bba39c</color>
+    <color name="exchangeGrayLine">#d8d8d8</color>
+    <color name="exchangeGrayLinePopup">#b6a899</color>
+    <color name="exchangeDetailLine">#ececec</color>
+    <color name="exchange_status_pink">#fba9b5</color>
+    <color name="residentNoteLightContent">#b9a099</color>
+
+    <color name="jobsTextColor">#583f25</color>
+    <color name="jobConsultationPinkLight">#e4d4cd</color>
+
+    <color name="windowLogin">#fff6f0</color>
+    <color name="windowLoginSelected">#bfb8b4</color>
+    <color name="loginLightText">#bda69f</color>
+
+    <color name="windowSignUp">#fff6f0</color>
+    <color name="windowSignUpSelected">#bfb8b4</color>
+    <color name="windowSignUpPopup">#7f7b78</color>
+    <color name="windowSignUpPopupSelected">#5f5c5a</color>
+    <color name="windowSignUpError">#fba9b5</color>
+    <color name="windowSignUpPink">#fd8688</color>
+    <color name="job_introduction_category">#b89f98</color>
+
+    <color name="windowLoading">#fba9b5</color>
+
+    <color name="windowSkillCheck">#fff6f0</color>
+    <color name="windowSkillCheckSelectedBackground">#801B0f02</color>
+    <color name="windowSkillCheckSelected">#8c8178</color>
+    <color name="windowSkillCheckStepSelected">#FFF6F0</color>
+    <color name="windowSkillCheckStepUnselected">#f4e6dc</color>
+    <color name="windowSkillCheckStepConnector">#e4d4cd</color>
+    <color name="windowSkillCheckA">#fba9b5</color>
+    <color name="windowSkillCheckB">#fcca72</color>
+    <color name="windowSkillCheckC">#97d1f9</color>
+    <color name="windowSkillCheckHelp">#fd8688</color>
+
+    <color name="windowPassword">#f4e6dc</color>
+    <color name="windowPasswordSelected">#b7aca5</color>
+    <color name="passwordContent">#fff6f0</color>
+
+    <color name="windowPassbookSelected">#b7aca5</color>
+    <color name="windowPassbookLineBold">#e4d4cd</color>
+    <color name="windowPassbookLineLight">#f4e6dc</color>
+    <color name="passbookTextColor">#b89f98</color>
+    <color name="passbookTextColorRed">#ff3636</color>
+
+    <color name="skill_header">#f4e6dc</color>
+    <color name="txt_clear">#e4d4cd</color>
+
+    <color name="settingTitle">#583F26</color>
+    <color name="settingDivider">#d4c2aca5</color>
+    <color name="gradient_setting_weak">#c2aca5</color>
+    <color name="gradient_setting_strong">#b0978d</color>
+
+    <color name="mypageBackground">#fff7f0</color>
+    <color name="txt_page">#b89f98</color>
+
+    <color name="faq_question">#e4d4cd</color>
+
+    <color name="txt_money">#f2e3df</color>
+
+    <!-- NOTE-->
+    <color name="residents_note_search_hint">#b89f98</color>
+    <color name="color_sub_common">#b89f98</color>
+    <color name="color_note_genre_detail_background">#B89F98</color>
+    <color name="comment_image_selected_background">#FD8688</color>
+    <color name="note_background">#fff6f0</color>
+    <color name="add_note_title_hint">#b89f98</color>
+    <color name="add_note_range_select_background">#fd8688</color>
+    <color name="add_note_range_unselect_background">#e4d4cd</color>
+    <color name="note_detail_border_background">#e4d4cd</color>
+    <color name="filter_bg_selected">#d8c0a4</color>
+
+    <!--MESSAGE LIST-->
+    <color name="message_between_line">#cccccc</color>
+
+    <!--Job introduction apply-->
+    <color name="job_introduction_apply_header_background">#E4D4CD</color>
+    <color name="job_introduction_apply_border">#b89f98</color>
+
+    <color name="point_get_status_title">#d8d8d8</color>
+
+    <color name="button_complete_point_get_background">#FC6B2A</color>
+    <color name="button_complete_point_get_background_selected">#7e3515</color>
+    <color name="btn_club_smart_login">#7f7f7f</color>
+    <color name="chat_typing">#f8eee6</color>
+
+    <!--Change design-->
+    <color name="txt_message_list_type">#F7AD2F</color>
+    <color name="gray_bold">#7b7a7a</color>
+    <color name="gray_black">#444444</color>
+    <color name="homeCategoryBackground">#F2F2F2</color>
+    <color name="btnEarnOff">#d8d8d8</color>
+    <color name="lightBackground">#F2F2F2</color>
+    <color name="lightDivider">#D8D8D8</color>
+    <color name="gray_header">#BEBEBE</color>
+    <color name="grayTextIntro">#848484</color>
+    <color name="darkText">#222222</color>
+    <color name="translucentColor">#29000000</color>
+    <color name="settingBackground">#8f8f8f</color>
+    <color name="skillLevel2">#F5AD2F</color>
+    <color name="skillLevel3">#FC6B2B</color>
+</resources>

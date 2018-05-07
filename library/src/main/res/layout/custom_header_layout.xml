@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnr_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="115px"
+        android:layout_marginTop="0px">
+
+        <ocuiparts.com.library.View.YuGothicTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_marginTop="15px"
+            android:paddingLeft="120px"
+            android:paddingRight="120px"
+            android:tag="33"
+            android:text="@string/txt_header_password"
+            android:textColor="@color/black"
+            android:textSize="33px"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="fill"
+
+           >
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_header_left"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginTop="15px"
+                android:background="@color/transparent"
+                android:contentDescription="@string/content_description_back"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/btn_back"
+                />
+
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_point"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="fill"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:background="@drawable/img_point_ic"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+
+
+                    />
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_marginTop="35px"
+                    android:paddingLeft="5px"
+                    android:tag="45"
+                    android:text="@string/tv_point"
+                    android:textColor="@color/colorAccentNew"
+                    android:textSize="45px"
+                    android:textStyle="bold" />
+
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/pt_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_toRightOf="@+id/tv_point"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:layout_marginTop="60px"
+
+                    android:tag="20"
+                    android:text="pt"
+                    android:textColor="@color/colorAccentNew"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+
+        </FrameLayout>
+
+
+
+
+
+
+        <!--  <android.support.v7.widget.AppCompatImageButton
+              android:id="@+id/btn_header_left_point"
+              android:layout_width="50px"
+              android:layout_height="50px"
+              android:layout_marginTop="35px"
+              android:layout_marginLeft="15px"
+              android:gravity="left|center"
+              android:background="@color/transparent"
+              android:contentDescription="@string/content_description_back"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:scaleType="fitXY"
+              android:stateListAnimator="@null"
+              app:srcCompat="@drawable/img_point_ic" />-->
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_header_right"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="15px"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/content_description_back"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:stateListAnimator="@null"
+            app:srcCompat="@drawable/ic_settings" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dropShadow"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_color_top" />
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnr_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <RelativeLayout
+            android:id="@+id/rl_banner"
+            android:layout_width="94px"
+            android:layout_height="94px"
+            android:layout_marginLeft="-48px"
+            android:layout_marginTop="-48px"
+            android:background="@color/txt_message_list_type"
+            android:rotation="-45">
+
+            <ocuiparts.com.library.View.YuGothicTextView
+                android:id="@+id/txt_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4px"
+                android:maxLines="1"
+                android:tag="20"
+                android:textColor="@color/white"
+                android:textSize="20px"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6px"
+            android:layout_marginLeft="14px"
+            android:layout_marginRight="5px"
+     >
+
+
+
+            <RelativeLayout
+                android:id="@+id/txt_new_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4px"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="32px"
+      >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter" />
+
+
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/upper_left"
+                    android:layout_width="107px"
+                    android:layout_height="53px"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/icon"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10px"
+                    android:tag="24"
+                    android:text="dsfdsfdsfdsf"
+                    android:textColor="@color/black"
+                    android:textSize="28px"
+                    android:textStyle="bold" />
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/upper_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="43px"
+                    android:layout_toRightOf="@+id/upper_left"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:tag="20"
+                    android:text="pow"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/bottom_left"
+                    android:layout_width="107px"
+                    android:layout_height="43px"
+                    android:layout_below="@+id/upper_right"
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_marginTop="15px"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:layout_marginLeft="10px"
+
+                    android:tag="24"
+                    android:text="dsfdsfdsfdsf"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line_between"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentTop="true"
+        android:background="@color/message_between_line"
+        android:visibility="visible" />
+
+</LinearLayout>

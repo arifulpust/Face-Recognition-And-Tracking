@@ -13,6 +13,8 @@ import com.oceanize.facerecognization.facedetect.FaceActivity;
 import com.oceanize.facerecognization.facedetectfromphoto.PhotoViewerActivity;
 import com.oceanize.facerecognization.facetrack.FaceTrackerActivity;
 import com.oceanize.facerecognization.multifacetrack.MultiTrackerActivity;
+import com.oceanize.facerecognization.oceanizelibrary.LibaryActivity;
+import com.oceanize.facerecognization.ocrreader.OcrReaderMainActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +27,7 @@ import butterknife.Unbinder;
 public class MainActivity extends AppCompatActivity implements OnItemListener {
     @BindView(R.id.list)
     RecyclerView list;
-List<String> menu= Arrays.asList("Face Detect from Photo", "Face Tracking","Multi Face Tracking","Eye Track","Face Track");
+List<String> menu= Arrays.asList("Face Detect from Photo", "Face Tracking","Multi Face Tracking","Eye Track","Face Track","OCR Reader","Oceanize Library");
 MenuAdapter  menuAdapter;
 Unbinder unbinder;
     @Override
@@ -63,6 +65,14 @@ Unbinder unbinder;
         }
         else if (Position==4) {
             Intent intent=new Intent(MainActivity.this, FaceActivity.class);
+            startActivity(intent);
+        }
+        else if (Position==5) {
+            Intent intent=new Intent(MainActivity.this, OcrReaderMainActivity.class);
+            startActivity(intent);
+        }
+        else if (Position==6) {
+            Intent intent=new Intent(MainActivity.this, LibaryActivity.class);
             startActivity(intent);
         }
         //FaceActivity

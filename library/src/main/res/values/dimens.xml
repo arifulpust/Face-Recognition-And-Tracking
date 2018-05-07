@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="round_radius">0dp</dimen>
+    <dimen name="btn_radius">2dp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="stroke_width_1.5">1.5dp</dimen>
+    <dimen name="padding_select">7dp</dimen>
+    <dimen name="stroke_width_code">2dp</dimen>
+    <dimen name="max_width_room_name">200dp</dimen>
+    <dimen name="corner_typing">5dp</dimen>
+    <dimen name="corner_button_earn">3dp</dimen>
+    <dimen name="corner_edt_search">1.5dp</dimen>
+    <dimen name="stroke_width_btn">1dp</dimen>
+    <dimen name="stroke_skill_layer">3dp</dimen>
+    <dimen name="stroke_skill_layer_inside">4.5dp</dimen>
+
+    <dimen name="stroke_skill_layer_clear">1dp</dimen>
+    <dimen name="stroke_skill_layer_inside_clear">3dp</dimen>
+    <dimen name="stroke_skill_layer_inside_end_clear">4.5dp</dimen>
+    <dimen name="stroke_skill_small_layer">2dp</dimen>
+    <dimen name="stroke_skill_small_layer_inside">2.5dp</dimen>
+</resources>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ocuiparts.com.library.customView.CustomHeaderView
+            android:id="@+id/rlt_header"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="@color/white"
+            app:dropShadow="true"
+            app:left_icon_visibility="true"
+            app:right_icon_visibility="true"
+            app:text_color="@color/black"
+            app:title_text="@string/btn_login"
+            app:title_textSize="32px"
+            app:title_visible="true"></ocuiparts.com.library.customView.CustomHeaderView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlt_header">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="32px"
+                    android:paddingTop="32px">
+
+                    <ocuiparts.com.library.customView.CustomImageView
+                        android:id="@+id/title_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="95px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="32px"
+                        app:background_color="@color/homeBackground"
+                        app:border_color="@color/white"
+                        app:border_width="0px"
+                        app:corner_radius="0px"
+                        app:image_main="@drawable/default_header"
+                        app:text_color="@color/black"
+                        app:title_text="ログイン"
+                        app:title_textSize="32px"
+                        app:title_visible="true"></ocuiparts.com.library.customView.CustomImageView>
+
+                    <RelativeLayout
+                        android:id="@+id/edittext_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="112px"
+                        android:layout_marginTop="43px"
+                        android:background="@color/white"
+                        android:paddingLeft="32px"
+                        android:paddingRight="32px">
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="197px"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:tag="22"
+                            android:text="@string/login_email"
+                            android:textColor="@color/gray_black"
+                            android:textSize="22px" />
+
+                        <ocuiparts.com.library.customEditText.EmailEditTextView
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="197px"
+                            android:tag="26"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_et="@color/grayTextIntro"
+                            app:lines="1"
+                            app:max_lines="1"
+                            app:placeholder_color="@color/white"
+                            app:text_color_et="@color/black"
+                            app:text_size_et="26px" />
+                    </RelativeLayout>
+
+
+                    <!--    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="112px"
+                                android:layout_marginTop="4px"
+                                android:background="@color/white"
+                                android:paddingLeft="32px"
+                                android:paddingRight="32px">
+
+                                <TextView
+                                    android:layout_width="197px"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:tag="22"
+                                    android:text="@string/login_password"
+                                    android:textColor="@color/gray_black"
+                                    android:textSize="22px" />
+
+                                <EditText
+                                    android:id="@+id/edt_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent"
+                                    android:inputType="textPassword"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:paddingLeft="197px"
+                                    android:tag="26"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/gray_black"
+                                    android:textSize="26px" />
+                            </RelativeLayout>
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/btn_show_psswrd"
+                                android:layout_width="104px"
+                                android:layout_height="112px"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="1px"
+                                android:layout_marginTop="4px"
+                                android:background="@color/transparent"
+                                android:contentDescription="@string/content_description_show_password"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:scaleType="fitXY"
+                                android:stateListAnimator="@null"
+                                app:srcCompat="@drawable/btn_show_password_selector" />
+                        </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:id="@+id/password_edittext_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="112px"
+                        android:layout_marginTop="4px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32px">
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:id="@+id/tv_password"
+                            android:layout_width="197px"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:tag="22"
+                            android:text="@string/login_password"
+                            android:textColor="@color/gray_bold"
+                            android:textSize="22px" />
+
+                        <ocuiparts.com.library.customEditText.PasswordEditTextView
+                            android:id="@+id/edt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_password"
+                            android:background="@color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:tag="22"
+                            app:password_visibility_icon_on="@drawable/ic_btn_password_on"
+                            app:password_visibility_icon_off="@drawable/ic_btn_password_off"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray_bold"
+                            android:textSize="26sp"
+                            app:cursor_color="@color/colorAccent"
+                            app:hint_color_pass="@color/gray_black"
+                            app:hint_pass=""
+                            app:placeholder_color="@color/white"
+                            app:text_color_pass="@color/black"
+                            app:text_size_pass="22" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="132px">
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:id="@+id/txt_forgot_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:tag="34"
+                            android:text="@string/login_forgot_password_intro"
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:textStyle="bold"
+                            app:background_color="@color/homeBackground"
+                            app:border_color="@color/homeBackground"
+                            app:border_width="0px"
+                            app:corner_radius="0px" />
+                    </RelativeLayout>
+
+
+                    <ocuiparts.com.library.customButtons.CustomSubmitButton
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="32px"
+                        android:background="@drawable/background_btn_black"
+                        android:foreground="@drawable/ripple_corner"
+                        android:stateListAnimator="@null"
+                        android:tag="39"
+                        android:text="@string/btn_login"
+                        android:textColor="@color/white"
+                        android:textSize="39px"
+                        android:textStyle="bold"
+                        app:background_drawable="@drawable/background_btn_black"
+                        app:border_color="@color/homeBackground"
+                        app:border_width="0px"
+                        app:corner_radius="0px" />
+
+                    <View
+                        android:id="@+id/middle_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="80px"
+                        android:background="@color/lightDivider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="89px"
+                        android:layout_marginTop="53px">
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:id="@+id/sign_up_intro"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:tag="33"
+                            android:text="@string/login_sign_up_intro"
+                            android:textColor="@color/black"
+                            android:textSize="33px" />
+                    </RelativeLayout>
+
+
+                    <ocuiparts.com.library.customButtons.CustomSubmitButton
+                        android:id="@+id/btn_login_mikata_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="32px"
+                        android:background="@drawable/background_btn_black"
+                        android:foreground="@drawable/ripple_corner"
+                        android:onClick="clickLoginMikataID"
+                        android:stateListAnimator="@null"
+                        android:tag="39"
+                        android:text="@string/btn_login_mikata_id"
+                        android:textColor="@color/white"
+                        android:textSize="39px"
+                        android:textStyle="bold"
+                        app:background_drawable="@drawable/background_btn_black" />
+
+                    <ocuiparts.com.library.customButtons.CustomSubmitButton
+                        android:id="@+id/btn_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="32px"
+                        android:layout_marginTop="32px"
+                        android:background="@drawable/background_btn"
+                        android:foreground="@drawable/ripple_corner"
+                        android:stateListAnimator="@null"
+                        android:tag="39"
+                        android:text="@string/btn_sign_up"
+                        android:textColor="@color/white"
+                        android:textSize="39px"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32px"
+                        >
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:id="@+id/txt_login_term_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:tag="25"
+                            android:text="@string/txt_login_term_service"
+                            android:textColor="@color/darkText"
+                            android:textSize="25px"
+                            app:background_color="@color/homeBackground"
+                            app:border_color="@color/homeBackground"
+                            app:border_width="0px"
+                            app:corner_radius="0px" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_below="@+id/rlt_header"
+            android:background="@drawable/gradient_color_top"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_auto_login_from_scheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--<include layout="@layout/activity_splash" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_click_abandon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black25"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></ProgressBar>
+    </RelativeLayout>
+
+</RelativeLayout>

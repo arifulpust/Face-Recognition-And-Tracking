@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:duplicateParentState="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="62px"
+        android:duplicateParentState="true">
+
+        <View
+            android:id="@+id/view_check"
+            android:layout_width="42px"
+            android:layout_height="32px"
+            android:background="@drawable/chk_skill_selector"
+            />
+
+        <ocuiparts.com.library.View.YuGothicTextView
+            android:paddingTop="-1px"
+            android:id="@+id/txt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:duplicateParentState="true"
+            android:paddingRight="9px"
+            android:tag="24"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="0.9"
+            android:textColor="@color/gray_black"
+            android:textSize="24px"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@color/button_complete_point_get_background" android:width="@dimen/stroke_width_btn"/>
+    <corners android:radius="@dimen/corner_button_earn"/>
+    <solid android:color="@color/transparent"/>
+</shape>

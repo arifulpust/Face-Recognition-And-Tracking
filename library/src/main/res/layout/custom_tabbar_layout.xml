@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_footer_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradient_color_bottom" />
+
+        <LinearLayout
+            android:id="@+id/lnl_footer_parent"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_below="@+id/divider"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_footer_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/content_description_footer_home"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_footer_home_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_footer_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/content_description_footer_chat"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:stateListAnimator="@null"
+                    app:srcCompat="@drawable/img_footer_chat_selector" />
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/txt_unread_message"
+                    android:layout_width="46px"
+                    android:layout_height="46px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32px"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/shape_footer_badge_circle"
+                    android:contentDescription=""
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:tag="15"
+                    android:text="@string/new_unread_message"
+                    android:textColor="@color/white"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_footer_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/content_description_footer_alert"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:stateListAnimator="@null"
+                    app:srcCompat="@drawable/img_footer_alert_selector" />
+
+                <ocuiparts.com.library.View.YuGothicTextView
+                    android:id="@+id/txt_new_alert"
+                    android:layout_width="46px"
+                    android:layout_height="46px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/shape_footer_badge_circle"
+                    android:contentDescription=""
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:tag="15"
+                    android:text="@string/new_unread_message"
+                    android:textColor="@color/white"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_footer_mypage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/content_description_footer_my_page"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_footer_mypage_selector" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <View
+            android:id="@+id/v_arc_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black50" />
+
+        <ocuiparts.com.library.customView.CustomTextView
+            android:id="@+id/txt_chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="374px"
+            android:maxLines="1"
+            android:tag="32"
+            android:text="@string/main_center_title"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <com.ogaclejapan.arclayout.ArcLayout
+                android:id="@+id/arc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:arc_axisRadius="250px"
+                app:arc_freeAngle="true"
+                app:arc_origin="bottom">
+
+                <LinearLayout
+                    android:id="@+id/lnl_go_job_consultation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:arc_angle="65">
+
+                    <View
+                        android:layout_width="112px"
+                        android:layout_height="112px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/btn_center_job" />
+
+                    <ocuiparts.com.library.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11px"
+                        android:maxLines="1"
+                        android:tag="26"
+                        android:text="@string/main_center_job"
+                        android:textColor="@color/white"
+                        android:textSize="26px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_go_to_house_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:arc_angle="115">
+
+                    <View
+                        android:layout_width="112px"
+                        android:layout_height="112px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/btn_center_house" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11px">
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:tag="26"
+                            android:text="@string/main_center_house"
+                            android:textColor="@color/white"
+                            android:textSize="26px"
+                            android:textStyle="bold" />
+
+                        <ocuiparts.com.library.customView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:tag="26"
+                            android:text="@string/main_center_job"
+                            android:textColor="@color/transparent"
+                            android:textSize="26px"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.ogaclejapan.arclayout.ArcLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent">
+
+        <ocuiparts.com.library.customButtons.CustomSubmitButton
+            android:id="@+id/btn_footer_center_chat"
+            android:layout_width="108px"
+            android:layout_height="108px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_footer_center_chat_selector"
+            android:contentDescription="@string/content_description_footer_center_chat"
+            android:stateListAnimator="@null" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_rotate_container_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="6px"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/view_rotate_pink"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:background="@drawable/img_rotate_plus_pink" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_rotate_container_unselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4px"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/view_rotate_white"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:background="@drawable/img_rotate_plus_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
